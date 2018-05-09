@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const Link = ({ active, children, onClick }) => (
-    <button
+    <button className="heck1"
        onClick={onClick}
        disabled={active}
        style={{
