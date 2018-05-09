@@ -4,11 +4,14 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import App from './components/App'
 
+import rootReducer from './reducers'
+
+const store = createStore(rootReducer)
 
 render(
-	<div>
+	<Provider store={store}>
 	   <App />
-	</div>,
+	</Provider>,
   document.getElementById('root')
 )
 
